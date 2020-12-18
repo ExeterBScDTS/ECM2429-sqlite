@@ -1,4 +1,4 @@
-# This example taken from the pysqlite documentation at https://pysqlite.readthedocs.io/en/latest/sqlite3.html
+# This example taken from the sqlite3 documentation at https://docs.python.org/3/library/sqlite3.html
 #
 
 import sqlite3
