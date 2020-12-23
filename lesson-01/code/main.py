@@ -2,9 +2,10 @@
 #
 
 import sqlite3
+from sqlite3.dbapi2 import Connection
 
 # Create a temporary database in memory.
-conn = sqlite3.connect(':memory:')
+conn : Connection = sqlite3.connect(':memory:')
 # More usual is to have a database file, e.g.
 # conn = sqlite3.connect('example.db')
 
