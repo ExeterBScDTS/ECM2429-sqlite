@@ -2,14 +2,14 @@
 #
 
 import sqlite3
-from sqlite3.dbapi2 import Connection
+from sqlite3.dbapi2 import Connection, Cursor
 
 # Create a temporary database in memory.
 conn : Connection = sqlite3.connect(':memory:')
 # More usual is to have a database file, e.g.
 # conn = sqlite3.connect('example.db')
 
-c = conn.cursor()
+c : Cursor = conn.cursor()
 
 # Create table
 c.execute('''CREATE TABLE stocks
